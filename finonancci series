@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	int i=1,j=1,k=0,a[i]={0},b[j]={1};
+	int fb=0;
+	while(fb<100)
+	{
+		printf("%d\t",fb);
+		fb=a[k]+b[k];
+		a[k]=b[k];
+		b[k]=fb;
+	}
+}
